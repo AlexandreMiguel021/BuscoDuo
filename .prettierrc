@@ -3,5 +3,6 @@
 	"printWidth": 80,
 	"semi": false,
 	"singleQuote": true,
-	"jsxSingleQuote": true
+	"jsxSingleQuote": true,
+	"racketSameLine": true
 }
