@@ -8,7 +8,7 @@ const theme = {
 	},
 	font: {
 		family:
-			"Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+			"Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
 		light: 300,
 		normal: 400,
 		bold: 600,
@@ -17,7 +17,7 @@ const theme = {
 			sm: '1.4rem',
 			md: '1.6rem',
 			lg: '1.8rem',
-			xl: '2.0rem',
+			xl: '2.4rem',
 			xxl: '2.8rem',
 			'2xl': '3.6rem',
 			'3xl': '4.2rem',
@@ -39,8 +39,9 @@ const theme = {
 			'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 67.08%);',
 		mainBg: '#121214',
 
-		white: '#FAFAFA',
+		white: '#f7f7f7',
 		black: '#030517',
+		zinc: '#A1A1AA',
 		lightGray: '#EAEAEA',
 		gray: '#8F8F8F',
 		darkGray: '#2E2F42'
