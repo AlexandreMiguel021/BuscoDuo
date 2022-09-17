@@ -1,12 +1,6 @@
-import { File } from '@types'
-
 export {}
 
 declare global {
-	interface NextApiResponse {
-		file: File
-	}
-
 	namespace NodeJS {
 		interface ProcessEnv {
 			MONGODB_URI: string
