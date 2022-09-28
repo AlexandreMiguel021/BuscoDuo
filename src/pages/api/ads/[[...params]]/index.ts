@@ -11,6 +11,7 @@ import {
 import AdsDTO from 'types/AdsDTO'
 import { convertHourStringToMinutes } from 'utils/convert-hour-string-to-minutes'
 import exceptionHandler from 'utils/exception-handler'
+import prisma from 'db/prisma'
 
 class Ads {
 	@Get('/:id/discord')
