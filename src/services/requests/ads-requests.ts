@@ -1,8 +1,8 @@
 import { api } from 'services/config/axios-config'
 import { toast } from 'react-toastify'
 import { Ad } from 'entities/Ad'
-import AdsDTO from 'types/AdsDTO'
 import { Discord } from 'types/Api'
+import AdsDTO from 'types/AdsDTO'
 
 interface IAdsRequest {
 	getAdsByGameSlug(gameSlug: string): Promise<Ad[]>
