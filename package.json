@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"test": "jest --passWithNoTests",
-		"vercel-build": "prisma generate && prisma migrate deploy && next build",
+		"vercel-build": "npx prisma migrate deploy && next build",
 		"prisma:generate": "prisma generate",
 		"test:ci": "yarn test -- --coverage",
 		"test:watch": "yarn test -- --watch",
