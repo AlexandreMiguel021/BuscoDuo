@@ -6,6 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
+		"vercel-build": "prisma generate && prisma migrate deploy && next build",
 		"test": "jest --passWithNoTests",
 		"test:ci": "yarn test -- --coverage",
 		"test:watch": "yarn test -- --watch",
