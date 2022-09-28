@@ -4,10 +4,9 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "npx prisma migrate deploy && next build",
 		"start": "next start",
 		"test": "jest --passWithNoTests",
-		"vercel-build": "npx prisma migrate deploy && next build",
 		"prisma:generate": "prisma generate",
 		"test:ci": "yarn test -- --coverage",
 		"test:watch": "yarn test -- --watch",
