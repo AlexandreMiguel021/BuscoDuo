@@ -19,10 +19,10 @@ class Games {
 		})
 	}
 
-	@Get('/:id/ads')
+	@Get('/:slug/ads')
 	@HttpCode(200)
 	@Catch(exceptionHandler)
-	public async getAdsByGameId(@Param('id') id: string) {
+	public async getAdsByGameSlug(@Param('slug') slug: string) {
 		const ads = await prisma.ad.findMany({
 			select: {
 				id: true,
@@ -34,7 +34,9 @@ class Games {
 				hourEnd: true
 			},
 			where: {
-				gameId: id
+				game: {
+					slug: slug
+				}
 			},
 			orderBy: {
 				createAt: 'desc'

@@ -1,5 +1,3 @@
-import AdsDTO from 'dto/AdsDTO'
-import cors from 'middlewares/with-cors'
 import {
 	Body,
 	Catch,
@@ -8,13 +6,12 @@ import {
 	HttpCode,
 	NotFoundException,
 	Param,
-	Post,
-	UseMiddleware
+	Post
 } from 'next-api-decorators'
+import AdsDTO from 'types/AdsDTO'
 import { convertHourStringToMinutes } from 'utils/convert-hour-string-to-minutes'
 import exceptionHandler from 'utils/exception-handler'
 
-@UseMiddleware(cors)
 class Ads {
 	@Get('/:id/discord')
 	@HttpCode(200)

@@ -9,7 +9,13 @@ export const HomeContainer = styled(Container)`
 export const HomeTitle = styled.h1(
 	({ theme }) => css`
 		font-size: ${theme.font.sizes['5xl']};
+		text-align: center;
 		color: ${theme.colors.white};
+
+		@media screen and (max-width: 768px) {
+			font-size: ${theme.font.sizes['3xl']};
+			text-align: center;
+		}
 	`
 )
 

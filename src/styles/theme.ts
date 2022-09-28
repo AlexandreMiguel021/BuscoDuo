@@ -8,7 +8,7 @@ const theme = {
 	},
 	font: {
 		family:
-			"Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+			"Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
 		light: 300,
 		normal: 400,
 		bold: 600,
@@ -26,34 +26,43 @@ const theme = {
 		}
 	},
 	colors: {
-		primary: '#996DFF',
-		darkPrimary: '#2a2634',
-		secondary: '#00947E',
+		primary: '#eb214e',
+		darkPrimary: '#0e2430',
+		secondary: '#da372d',
 		gradient: `linear-gradient(
-      45deg,
-      #fa8bff 0%,
-      #2bd2ff 52%,
-      #2bff88 90%
-    );`,
+			to right,
+			#eb214e,
+			#e32c3d,
+			#da372d,
+			#d0401c,
+			#c44806
+		);`,
 		darkGradient:
 			'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 67.08%);',
 		mainBg: '#121214',
-
+		zinc900: '#18181B',
+		zinc500: '#71717A',
 		white: '#f7f7f7',
 		black: '#030517',
 		zinc: '#A1A1AA',
 		lightGray: '#EAEAEA',
+		emerald: '#34D399',
 		gray: '#8F8F8F',
-		darkGray: '#2E2F42'
+		darkGray: '#2E2F42',
+		dangers: '#ff3330'
 	},
 	spacings: {
+		'2xs': '0.4rem',
 		xxs: '0.8rem',
 		xs: '1.6rem',
 		sm: '2.4rem',
 		md: '3.2rem',
 		lg: '4.0rem',
 		xl: '4.8rem',
-		xxl: '5.6rem'
+		xxl: '5.6rem',
+		'2xl': '6.2rem',
+		'3xl': '7.6rem',
+		'4xl': '9.2rem'
 	},
 	layers: {
 		base: 10,

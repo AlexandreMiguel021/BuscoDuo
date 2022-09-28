@@ -4,12 +4,18 @@
     "es2021": true,
     "node": true
   },
+  "settings": {
+    "react": {
+      "veersion": "detect"
+    }
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -24,17 +30,13 @@
     "react-hooks"
   ],
   "rules": {
-    "@typescript-eslint/no-non-null-assertion": "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": "error",
     "react/prop-types": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-namespace": "off"
-  },
-  "ignorePatterns": [
-    "src/**/*.scss",
-    "/**/*.json",
-    "/**/*.js"
-  ]
+    "@typescript-eslint/no-non-null-assertion": "off"
+  }
 }

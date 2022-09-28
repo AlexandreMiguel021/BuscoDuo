@@ -12,6 +12,7 @@ datasource db {
 
 model Game {
   id        String @id @default(uuid())
+  slug      String @unique
   title     String
   bannerUrl String
   ads       Ad[]

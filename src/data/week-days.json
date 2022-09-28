@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Domingo"
+  },
+  {
+    "id": "2",
+    "title": "Segunda"
+  },
+  {
+    "id": "3",
+    "title": "Terça"
+  },
+  {
+    "id": "4",
+    "title": "Quarta"
+  },
+  {
+    "id": "5",
+    "title": "Quinta"
+  },
+  {
+    "id": "6",
+    "title": "Sexta"
+  },
+  {
+    "id": "7",
+    "title": "Sábado"
+  }
+]

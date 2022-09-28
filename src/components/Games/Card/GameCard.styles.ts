@@ -4,6 +4,13 @@ export const GameCard = styled.a`
 	position: relative;
 	border-radius: 0.8rem;
 	overflow: hidden;
+	cursor: pointer;
+	transition: 250ms ease;
+
+	:hover {
+		transition: 250ms ease;
+		transform: scale(1.1) rotate(2deg);
+	}
 `
 
 export const GameImage = styled.div`
