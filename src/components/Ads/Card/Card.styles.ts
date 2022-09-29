@@ -9,6 +9,7 @@ export const AdCard = styled.div(
 		max-width: 33rem;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 		gap: ${theme.spacings.xs};
 		color: ${theme.colors.white};
 		box-shadow: 0 8px 18px #00000030;
