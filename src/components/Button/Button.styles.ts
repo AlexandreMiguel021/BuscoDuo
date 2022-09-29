@@ -31,6 +31,11 @@ export const Button = styled.button<ButtonProps>(
 			transition: 150ms ease-in;
 		}
 
+		:focus {
+			outline: none;
+			opacity: 0.9;
+		}
+
 		@media screen and (max-width: 768px) {
 			font-size: ${theme.font.sizes.sm};
 		}

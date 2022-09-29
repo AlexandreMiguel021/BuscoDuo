@@ -1,6 +1,7 @@
 import { Navbar } from 'components/Navbar'
 import { Fragment, ReactNode } from 'react'
 import { motion } from 'framer-motion'
+import UnverifiedEmail from 'components/UnverifiedEmail'
 
 interface LayoutProps {
 	children: ReactNode
@@ -15,6 +16,7 @@ const animation = {
 export function Layout({ children }: LayoutProps) {
 	return (
 		<Fragment>
+			<UnverifiedEmail />
 			<Navbar />
 			<motion.main
 				variants={animation}
