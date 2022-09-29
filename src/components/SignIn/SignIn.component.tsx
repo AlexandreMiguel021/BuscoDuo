@@ -1,7 +1,6 @@
 import { Dialog } from '@headlessui/react'
 import { Button } from 'components/Button'
 import { Overlay } from 'components/Overlay'
-import useSession from 'hooks/useSession'
 import { DiscordLogo } from 'phosphor-react'
 import useUserStore from 'store/user-store'
 import * as S from './SignIn.styles'
@@ -10,8 +9,6 @@ export function SignIn() {
 	const isOpen = useUserStore((state) => state.isOpenSigInModal)
 	const close = useUserStore((state) => state.closeSigInModal)
 	const signIn = useUserStore((state) => state.signIn)
-	const { session } = useSession()
-	console.log(session)
 
 	return (
 		<Dialog open={isOpen} onClose={close} static>

@@ -11,8 +11,7 @@ const SingIn: NextPage = () => {
 	}
 	useEffect(() => {
 		async function get() {
-			const { data } = await supabase.auth.getUser()
-			console.log(data)
+			await supabase.auth.getUser()
 		}
 		get()
 	}, [])

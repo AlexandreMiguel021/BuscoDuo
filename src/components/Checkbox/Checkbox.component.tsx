@@ -11,13 +11,11 @@ interface CheckboxProps {
 }
 
 export function Checkbox({ label, name, defaultValue }: CheckboxProps) {
-	const { setValue, watch } = useFormContext()
+	const { setValue } = useFormContext()
 
 	useEffect(() => {
 		setValue(name, false)
 	}, [defaultValue, name, setValue])
-
-	console.log(watch(name))
 
 	return (
 		<S.checkboxContainer>
