@@ -51,6 +51,20 @@ const GlobalStyles = createGlobalStyle`
 			background-size: cover;
 			height: 100vh;
 			overflow-x: hidden;
+
+			::-webkit-scrollbar {
+				width: 4px; /* width of the entire scrollbar */
+			}
+
+			::-webkit-scrollbar-track {
+				background: ${theme.colors.darkPrimary};
+			}
+
+			::-webkit-scrollbar-thumb {
+				background-color: ${theme.colors.secondary};
+				border-radius: 10px;
+				border: 3px solid ${theme.colors.secondary};
+			}
 		}
 
 		::selection {
