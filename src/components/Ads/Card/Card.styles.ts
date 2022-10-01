@@ -71,7 +71,8 @@ export const DiscordName = styled.div(
 		position: absolute;
 		height: 10rem;
 		background-color: ${theme.colors.darkGray};
-		width: 20rem;
+		width: max-content;
+		padding: ${theme.spacings.xs};
 		display: flex;
 		border-radius: 0.8rem;
 		bottom: 0;
