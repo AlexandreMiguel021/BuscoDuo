@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const GamesNotFound = styled.div(
+export const AdsNotFound = styled.div(
 	({ theme }) => css`
 		color: ${theme.colors.white};
 		max-width: 40rem;
