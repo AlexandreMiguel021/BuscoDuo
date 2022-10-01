@@ -1,4 +1,5 @@
 import { AdsList } from 'components/Ads/List'
+import { AdsNotFound } from 'components/AdsNotFound'
 import { BackRouter } from 'components/BackRouter'
 import { Layout } from 'components/layout'
 import { Ad } from 'entities/Ad'
@@ -10,9 +11,12 @@ interface AdsProps {
 }
 
 export default function Ads({ ads }: AdsProps) {
+	const hasAd = ads.length
+
 	return (
 		<Layout>
 			<BackRouter />
+			{!hasAd && <AdsNotFound />}
 			<AdsList ads={ads} />
 		</Layout>
 	)
