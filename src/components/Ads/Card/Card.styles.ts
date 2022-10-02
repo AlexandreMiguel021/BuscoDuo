@@ -86,11 +86,13 @@ export const DiscordName = styled.div(
 		transform: translate(50%, -3rem) scale(0.4);
 		transition: 250ms ease-out;
 		opacity: 0;
+		visibility: hidden;
 
 		&[data-visible='true'] {
 			opacity: 1;
 			transition: 250ms ease-out;
 			transform: translate(50%, -8rem) scale(1);
+			visibility: visible;
 		}
 
 		button {
