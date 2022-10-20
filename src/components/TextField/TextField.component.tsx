@@ -12,6 +12,7 @@ interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
 export function TextField({ label, name, ...props }: TextFieldProps) {
 	const { register, formState } = useFormContext()
 	const error: any = formState.errors[name]?.message
+	console.log('render')
 
 	return (
 		<S.TextFieldContainer>
